@@ -13,6 +13,8 @@ ENV PATH /opt/conda/envs/nmrfilter/bin:$PATH
 RUN conda install -y -c cidermole jdk8
 
 COPY . /home/nmrfilter
+RUN git clone https://github.com/stefhk3/nmrfilter.git
+RUN mv nmrfilter /home/nmrfilter/api
 
 EXPOSE 5040
 CMD sh /home/nmrfilter/run_server.sh 

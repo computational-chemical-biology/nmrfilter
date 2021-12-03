@@ -11,7 +11,7 @@ app.config.update(
     # Flask-Dropzone config:
     #DROPZONE_ALLOWED_FILE_TYPE='text',
     DROPZONE_ALLOWED_FILE_CUSTOM = True,
-    DROPZONE_ALLOWED_FILE_TYPE = '.smi,.csv,.txt',
+    DROPZONE_ALLOWED_FILE_TYPE = '.smi,.csv,.txt,.xlsx',
     DROPZONE_MAX_FILE_SIZE=3,
     DROPZONE_MAX_FILES=30,
 )
